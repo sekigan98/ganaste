@@ -3,8 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const contenedor = document.getElementById("palabras-dinamicas");
 
   let i = 0;
-  setInterval(() => {
-    i = (i + 1) % palabras.length;
+  const cambiarPalabra = () => {
+    contenedor.style.animation = "none"; // reset animación
+    void contenedor.offsetWidth;        // trigger repaint
+    contenedor.style.animation = "fadeDown 0.6s ease";
+
     contenedor.textContent = palabras[i];
-  }, 2500);
+    i = (i + 1) % palabras.length;
+  };
+
+  cambiarPalabra(); // inicial
+  setInterval(cambiarPalabra, 2500);
 });
