@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   container.style.margin = "0 auto";
   container.style.minHeight = "90px";
   container.style.zIndex = "9994";
- container.style.marginTop = "60px"; //  posicion
+ container.style.marginTop = "30px"; //  posicion
   
   let index = 0;
   const showReview = () => {
