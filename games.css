@@ -1,7 +1,9 @@
 #palabras-dinamicas {
+  position: relative; /* Asegura que el z-index funcione */
+  z-index: 9996; /* Más alto que cualquier imagen decorativa */
   text-align: center;
   font-size: 24px;
-  color: #f2f2f2; /* gris muy claro */
+  color: #f2f2f2;
   font-weight: bold;
   text-shadow: 0 0 5px #b600ff, 0 0 10px #b600ff, 0 0 20px #8f00ff;
   margin-top: 40px;
